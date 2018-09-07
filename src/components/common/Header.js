@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
-export default class Header extends Component {
+class Header extends Component {
     constructor(props){
         super(props);
     }
@@ -31,3 +31,8 @@ let styles = StyleSheet.create({
         fontSize: 20
     }
 });
+
+export { Header };
+
+
+// Make the component available to other parts of the app 'export default { Header: Header}, shorthand is written below'
